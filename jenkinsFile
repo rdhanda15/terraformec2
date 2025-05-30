@@ -10,7 +10,7 @@ pipeline {
         stage('Checkout') {
             steps {
                 // Clone your Terraform config repo
-                git branch: 'main', credentialsId: 'Github', url: 'https://github.com/your-repo.git'
+                git branch: 'main', credentialsId: 'Github', url: 'https://github.com/rdhanda15/terraformec2.git'
             }
         }
 

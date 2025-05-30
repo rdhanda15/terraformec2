@@ -37,7 +37,8 @@ pipeline {
 
         stage('Terraform Apply') {
             steps {
-                sh "terraform ${params.ACTION} -auto-approve tfplan"
+                echo "Terrafrom ACTION is --> ${ACTION}"
+                sh "terraform ${ACTION} -auto-approve"
             }
         }
     }

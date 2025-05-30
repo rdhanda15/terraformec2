@@ -16,7 +16,7 @@ resource "aws_instance" "simple_ec2" {
 }
 
 resource "aws_security_group" "allow_ssh" {
-  name        = "allow_ssh"
+  name        = "allow_ssh_ritu"
   description = "Allow SSH inbound traffic"
 
   ingress {
